@@ -8,6 +8,10 @@ galaxy. No black spheres, no flat rings, no textures, no video — the image is
 computed, not pasted. Built with plain HTML/CSS/JavaScript (ES Modules) plus a
 locally vendored Three.js. No build step, no CDN, no runtime fetch.
 
+![GARGANTUA live render](preview.png)
+
+Live demo (GitHub Pages, served while any machine is online — no need to keep a local computer running): https://ericwang1358.github.io/muse-qwen-blackhole/
+
 ## Start
 
 ```powershell
