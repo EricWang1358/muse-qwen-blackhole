@@ -13,6 +13,8 @@ locally vendored Three.js. No build step, no CDN, no runtime fetch.
 
 Live demo (GitHub Pages, served while any machine is online — no need to keep a local computer running): https://ericwang1358.github.io/muse-qwen-blackhole/
 
+Build log: [PROCESS.md](PROCESS.md) — all 173 rounds from blank page to this render, including every human prompt, the evidence chain, and why cheap models plus pairing discipline beat one-shot generation.
+
 ## Start
 
 ```powershell
