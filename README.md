@@ -7,6 +7,7 @@ Doppler beaming and gravitational redshift, over a procedural starfield and
 galaxy. No black spheres, no flat rings, no textures, no video — the image is
 computed, not pasted. Built with plain HTML/CSS/JavaScript (ES Modules) plus a
 locally vendored Three.js. No build step, no CDN, no runtime fetch.
+<img width="2559" height="1300" alt="image" src="https://github.com/user-attachments/assets/7db7337d-dafa-433b-9380-31a93b2301ea" />
 
 ![GARGANTUA live render](preview.png)
 
