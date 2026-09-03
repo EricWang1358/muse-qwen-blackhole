@@ -1,7 +1,8 @@
 # GARGANTUA 建造实录：173 个回合，从白屏到精美
 
 > 时间：2026-09-03 17:17（北京时间）起，至交付。
-> 模型：队长 muse-spark-1.3；三名队员全程 muse-spark-1.3-contributor-free（免费档）。
+> 模型：队长 muse-spark-1.3 全程；首任小队三席 opencode-zen/muse-spark-1.3-contributor-free；
+> 第二任小队三席 hyper-charm/qwen3.8-flash（即 qwen3.8f，reasoning max）——分工见 §7。
 > 方法：结对编程插件全程护航（两任小队），后半程队长亲自收尾。模型费用：¥0。
 >
 > **本文观点（先摆出来，再用下面 173 轮证明）：**
@@ -110,3 +111,28 @@ NaN 假设被自己实验推翻；合成链被三帧真黑免罪；定位 diskCo
 复现：git clone 本仓库 → 任意静态服务器 → 打开即看。TESTLOG.md 是验收记录。
 
 Star it if you believe acceptance should be computed, not asserted.
+
+## 7. 模型分工表：谁干了什么（以 team.json 存档为准，非回忆）
+
+| 部分 | 席位 | 模型 | 说明 |
+|---|---|---|---|
+| t-1 脚手架 | 首任 Driver | muse-spark-1.3-contributor-free | index/main/vendor/css/README/冒烟 |
+| t-2 测地线核心 + CPU 镜像 | 首任 Driver | 同上 | 积分器 + minR 3.42 + 捕获翻转 |
+| t-3 体积盘 + PUFF | 首任 Driver | 同上 | 真体积接线 |
+| t-4 星空 + composer + 光度 | 首任 Driver | 同上 | 单 ACES + 黑位 0/高光 2.4 |
+| t-5 presenter rig（21 参/HUD/keydown） | 首任 Driver | 同上 | 含 5 次回填 |
+| t-6 音频/恢复/shot API | 首任 Driver | 同上 | 振荡器 + toBlob 下载 |
+| 全部 SPEC-FORK 与判词（首任） | 首任 Navigator | 同上 | 6 冻结 + 重算重放 |
+| 规划攻击简报 | 首任 Challenger | 同上 | 判 LUT 路线死刑 |
+| 旧标准归档 + F1 定位 + vendor 排除 | 次任 Driver | QWEN | 证据保全第一人 |
+| F5 自曝坏解码器 + F6 守卫 + F7 钉死 | 次任 Driver | QWEN | 差点签发假合格，自己毙掉 |
+| X1/X2 判别 + NaN 证伪 + HUD 陷阱 | 次任 Driver/Challenger | QWEN | 方法对结论错，照样记功 |
+| 发射上限 + Kirchhoff 形状 + T4 否决 | 次任 Driver | QWEN | sup 7.27，自判 36.3:1 出局 |
+| 角表修正 + 药丸确认 + 天空复刻 + 撤回 | 次任 Driver | QWEN | 4x 分歧终结者 |
+| view9 吸收份额 + canvas + 中性 + 竞态 | 次任 Driver | QWEN | 空对照先行的探针诚实 |
+| 像素闸门三代 + 电池 + 变异体 + 跨读 | 次任 Navigator | QWEN | M1-M14 全部 |
+| 伪造四件套 + 误拒猎杀 + 收敛表 + 见证 | 次任 Challenger | QWEN | 6 绿即无罪是它证伪的 |
+| 全程仲裁 + 取证 + 调参 + 发布 + 本档 | 队长 | muse-spark-1.3 | 基本只看板和像素 |
+
+注：QWEN = hyper-charm/qwen3.8-flash（reasoning max），以两份 team.json 存档为准。
+本仓库名 muse-qwen-blackhole 不是巧合：Muse 建了房子，Qwen 验了地基——前者盖起 25 个增量，后者证明其中 6 个是纸糊的并重打了地基。
