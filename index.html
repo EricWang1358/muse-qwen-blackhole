@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>GARGANTUA &mdash; Schwarzschild Black Hole Raytracer</title>
+<link rel="stylesheet" href="./css/main.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.js",
+    "three/addons/": "./vendor/three/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="title"><h1>GARGANTUA</h1><p>SCHWARZSCHILD BLACK HOLE &middot; REAL-TIME GEODESIC RAYTRACER</p></div>
+<div id="hud" hidden></div>
+<div id="err-overlay" hidden></div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
